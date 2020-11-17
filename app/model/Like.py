@@ -10,5 +10,5 @@ class Like(Base):
     user_id = Column(INT)
     status = Column(INT)
     channel_id = Column(INT)
-    topic_artical_id = Column(INT)
+    topic_article_id = Column(INT)
     create_time = Column(TIMESTAMP(True), nullable=False, server_default=text('NOW()'))

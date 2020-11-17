@@ -40,7 +40,7 @@ image:
 | id   | int  |         |
 | url  | text |         |
 
-Topic_artical:
+TopicArticle:
 
 | key      | type | comment |
 | -------- | ---- | ------- |

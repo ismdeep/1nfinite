@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
-from sqlalchemy import Column,INT,VARCHAR,Text,Boolean
-from sqlalchemy.orm import relationship
-
+from sqlalchemy import Column, INT
 from app.base.extensions import Base
 
 

@@ -7,4 +7,10 @@ from .Image import Image
 from .Like import Like
 from .Reference import Reference
 from .Topic import Topic
-from .Topic_artical import Topic_artical
+from .TopicArticle import TopicArticle
+
+from app.base.extensions import Base
+from app.base.extensions import engine
+
+# Init for creating tables
+Base.metadata.create_all(engine)

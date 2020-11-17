@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 # -*- coding:utf-8 -*-
-from datetime import datetime
-
-from sqlalchemy import Column, INT, VARCHAR, Text, Boolean, ForeignKey, TIMESTAMP, text
+from sqlalchemy import Column, INT, Text, TIMESTAMP, text
 
 from app.base.extensions import Base
 
