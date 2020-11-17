@@ -8,11 +8,11 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config():
-    HOSTNAME = 'zhuangbi.party'
-    PORT = '3306'
-    DATABASE = '1finite'
-    USERNAME = 'root'
-    PASSWORD = 'LfB9yOqj#ma&'
+    HOSTNAME = os.environ.get('DB_HOST')
+    PORT = os.environ.get('DB_PORT')
+    DATABASE = os.environ.get('DB_NAME')
+    USERNAME = os.environ.get('DB_USER')
+    PASSWORD = os.environ.get('DB_PASS')
     DB_URI = 'mysql+pymysql://{username}:{password}@{host}:{port}/{db}'.format(username=USERNAME, password=PASSWORD,
                                                                                host=HOSTNAME, port=PORT, db=DATABASE)
 
@@ -24,9 +24,8 @@ class Config():
 
     DEBUG = True
 
-    SECRET_KEY = 'F!tL%W^I64pkC2NHC!hsCC7q%z^Bft'
+    SECRET_KEY = os.environ.get('SECRET_KEY')
 
     @staticmethod
     def init_app(app):
         pass
-
